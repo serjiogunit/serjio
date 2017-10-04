@@ -3,7 +3,10 @@
   <head>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function(event) { 
-        document.getElementById('openApp').href=window.location.href.replace(window.location.protocol, 'tamtam:');
+        var link = document.getElementById('openApp');
+        var location = window.location.href.replace(window.location.protocol, 'tamtam:');
+        link.href=location;
+        link.innerHtml = 'Open tamtam applicaion: ' + location;
       });  
     </script>
   </head>
