@@ -2,7 +2,9 @@
 <html>
   <head>
     <script type="text/javascript">
-      document.getElementById('openApp').href=window.location.href.replace(window.location.protocol, 'tamtam:');
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        document.getElementById('openApp').href=window.location.href.replace(window.location.protocol, 'tamtam:');
+      });  
     </script>
   </head>
   <body>
