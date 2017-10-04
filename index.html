@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script type="text/javascript">
+      document.getElementById('openApp').href=window.location.href.replace(window.location.protocol, 'tamtam:');
+    </script>
+  </head>
   <body>
     Hello!!
     <br>
-    <a href="tamtam://https://serjiogunit.github.io/#/threads/129#post_no-2567">Open applicaion</a><br/>
+    <a id="openApp" href="#">Open applicaion</a><br/>
   </body>
 </html>
 
