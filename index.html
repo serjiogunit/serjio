@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="apple-itunes-app">
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function(event) { 
         var link = document.getElementById('openApp');
         var location = window.location.href.replace(window.location.protocol, 'tamtam:');
         link.href=location;
         link.innerHTML = 'Open tamtam applicaion: ' + location;
+        document.querySelector('meta[name="apple-itunes-app"]').setAttribute("content", 'app-id=1261402801, app-argument=' + window.location.href);
       });  
     </script>
   </head>
